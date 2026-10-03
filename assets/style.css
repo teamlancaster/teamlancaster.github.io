@@ -278,3 +278,33 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacin
   .js .scroll-cue{transform:translateX(-50%)!important}
   .js .road-draw{stroke-dashoffset:0!important}
 }
+
+/* ---------- family photos (top row: Murphy, Chris, Lia, Archie) ---------- */
+.photo{position:relative;overflow:hidden;background:#1f2022}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.member .photo{aspect-ratio:4/5}
+.kid .photo{aspect-ratio:1;border-bottom:1px solid var(--line)}
+.member:hover .photo img,.kid:hover .photo img{transform:scale(1.03)}
+.photo::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(185,164,135,.18);pointer-events:none}
+.parents{grid-template-columns:repeat(4,1fr);gap:1rem}
+.parents .member{grid-template-columns:1fr;gap:1.1rem;align-items:start;align-content:start;padding:1rem 1rem 1.3rem}
+.parents .member h3{font-size:2rem;margin-bottom:.4rem}
+.parents .member p{font-size:.92rem}
+.member.dog{border-top:2px solid var(--bronze)}
+@media (max-width:1000px){.parents{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:720px){
+  .parents{gap:.75rem}
+  .parents .member{padding:.65rem .65rem 1rem;gap:.8rem}
+  .parents .member h3{font-size:1.55rem}
+  .parents .member .role{font-size:.56rem;letter-spacing:.2em}
+  .parents .member p{font-size:.84rem;line-height:1.45}
+}
+
+/* ---------- grandkids row +  memorial card ---------- */
+.memorial .memorial-art{aspect-ratio:1;display:grid;place-items:center;border-bottom:1px solid var(--line);
+  background:radial-gradient(ellipse at 50% 45%,rgba(233,225,211,.05),transparent 70%),var(--charcoal)}
+.memorial .wings{width:82%;height:auto;opacity:.92}
+.memorial h4{padding-bottom:.15rem}
+.memorial .forever{font-family:var(--serif);font-style:italic;font-size:.88rem;color:var(--sand);text-align:center;padding:0 .5rem .85rem;opacity:.85}
+.kids.grand .kid h4{padding-bottom:.9rem}
+.kids.grand .memorial h4{padding-bottom:.1rem}
