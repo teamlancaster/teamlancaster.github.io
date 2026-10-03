@@ -301,9 +301,11 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacin
 }
 
 /* ---------- grandkids row +  memorial card ---------- */
-.memorial .memorial-art{aspect-ratio:1;display:grid;place-items:center;border-bottom:1px solid var(--line);
-  background:radial-gradient(ellipse at 50% 45%,rgba(233,225,211,.05),transparent 70%),var(--charcoal)}
-.memorial .wings{width:82%;height:auto;opacity:.92}
+.memorial .memorial-wings{display:flex;justify-content:center;margin:.7rem 0 -.6rem;pointer-events:none}
+.memorial .memorial-wings .wings{width:clamp(44px,30%,64px);height:auto;opacity:.9;
+  filter:drop-shadow(0 0 5px rgba(233,225,211,.22)) drop-shadow(0 0 12px rgba(185,164,135,.16))}
+.memorial .memorial-wings .wings ellipse{display:none}
+.memorial h4{padding-top:.2rem}
 .memorial h4{padding-bottom:.15rem}
 .memorial .forever{font-family:var(--serif);font-style:italic;font-size:.88rem;color:var(--sand);text-align:center;padding:0 .5rem .85rem;opacity:.85}
 .kids.grand .kid h4{padding-bottom:.9rem}
