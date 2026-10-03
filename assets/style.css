@@ -299,14 +299,3 @@ h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.05;letter-spacin
   .parents .member .role{font-size:.56rem;letter-spacing:.2em}
   .parents .member p{font-size:.84rem;line-height:1.45}
 }
-
-/* ---------- grandkids row +  memorial card ---------- */
-.memorial .memorial-wings{display:flex;justify-content:center;margin:.7rem 0 -.6rem;pointer-events:none}
-.memorial .memorial-wings .wings{width:clamp(44px,30%,64px);height:auto;opacity:.9;
-  filter:drop-shadow(0 0 5px rgba(233,225,211,.22)) drop-shadow(0 0 12px rgba(185,164,135,.16))}
-.memorial .memorial-wings .wings ellipse{display:none}
-.memorial h4{padding-top:.2rem}
-.memorial h4{padding-bottom:.15rem}
-.memorial .forever{font-family:var(--serif);font-style:italic;font-size:.88rem;color:var(--sand);text-align:center;padding:0 .5rem .85rem;opacity:.85}
-.kids.grand .kid h4{padding-bottom:.9rem}
-.kids.grand .memorial h4{padding-bottom:.1rem}
